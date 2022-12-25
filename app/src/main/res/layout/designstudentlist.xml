@@ -17,7 +17,7 @@
             android:layout_height="50dp"
             android:id="@+id/img_std_design"
             app:layout_constraintStart_toStartOf="parent"
-            android:src="@drawable/ic_baseline_account_circle_24"
+            android:src="@drawable/student"
             app:layout_constraintTop_toTopOf="parent"/>
 
         <TextView
