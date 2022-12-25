@@ -45,4 +45,6 @@ public class Batches extends AppCompatActivity {
             }
         });
     }
+    public void reg(View view) {startActivity(new Intent(Batches.this, registerbatch.class));
+    }
 }

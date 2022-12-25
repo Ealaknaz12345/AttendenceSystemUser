@@ -25,11 +25,10 @@ public class Subjects extends AppCompatActivity {
     RecyclerView recyclerView;
     SubjectRecyclerAdapter adapter;
     ArrayList<Subject> list;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_subjects);
+        setContentView(R.layout.activity_student_screen);
         recyclerView = findViewById(R.id.subjectrecycler);
         list = new ArrayList<>();
 
@@ -45,7 +44,11 @@ public class Subjects extends AppCompatActivity {
                 LinearLayoutManager llm = new LinearLayoutManager(Subjects.this, RecyclerView.VERTICAL, false);
                 recyclerView.setLayoutManager(llm);
                 recyclerView.setAdapter(adapter);
+
+
             }
         });
     }
+    public void addsubject(View view) {startActivity(new Intent(Subjects.this,rgistratersubject.class));}
+
 }

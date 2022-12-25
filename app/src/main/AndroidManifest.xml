@@ -13,21 +13,14 @@
         android:theme="@style/Theme.AttendenceSystemUser"
         tools:targetApi="31">
         <activity
+            android:name=".registerbatch"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".batchlist"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-        <activity
-            android:name=".subjectscreen"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-        <activity
-            android:name=".SubjectsMainscreen"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
@@ -41,15 +34,32 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".Batches"
+            android:name=".SubjectsMainscreen"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
+            android:name=".Subjectscreen"
+            android:exported="false"
+            android:label="Add subjects">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Batches"
+            android:exported="false"
+            android:label="Add batches">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".Teachers"
-            android:exported="false">
+            android:exported="false"
+            android:label="Add teachers">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
@@ -79,7 +89,8 @@
         </activity>
         <activity
             android:name=".Students"
-            android:exported="false">
+            android:exported="false"
+            android:label="Add students">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
@@ -110,7 +121,7 @@
         <activity
             android:name=".MainActivity"
             android:exported="true"
-            android:label="Admin Login">
+            android:label="Login">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
