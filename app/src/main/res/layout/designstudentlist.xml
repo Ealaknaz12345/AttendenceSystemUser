@@ -23,7 +23,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="username"
+            android:text="User name"
             android:textSize="20dp"
             android:id="@+id/studentname"
             android:textColor="@color/black"
@@ -33,7 +33,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="roll"
+            android:text="rollno"
             android:id="@+id/studentroll"
             android:textColor="@color/black"
             app:layout_constraintTop_toBottomOf="@id/studentname"
